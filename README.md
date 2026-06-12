@@ -15,21 +15,35 @@ API REST construida con **Node.js**, **Express**, **SQLite** y **Zod** para cons
 
 ## Instalación y ejecución
 
+Sigue estos pasos para configurar y correr el proyecto localmente:
+
+### 1. Instalar las dependencias
+Descarga e instala todos los módulos y dependencias de Node.js requeridos por el proyecto:
 ```bash
-# 1. Instalar dependencias
 npm install
-
-# 2. Poblar la base de datos (crear tablas + insertar datos)
-npm run seed
-
-# 3. Iniciar el servidor
-npm start
-
-# O en modo desarrollo (recarga automática)
-npm run dev
 ```
 
-El servidor queda disponible en: `http://localhost:4321`
+### 2. Poblar la base de datos (Seeding)
+Para inicializar la base de datos, ejecuta el siguiente comando:
+```bash
+npm run seed
+```
+> [!NOTE]
+> Este comando ejecuta el script `src/db/seed.js`, el cual crea automáticamente un archivo de base de datos SQLite local (`mundiales.db`), genera la estructura de tablas necesaria e inserta toda la información histórica de las ediciones de la Copa Mundial de la FIFA (desde Uruguay 1930 hasta la edición del 2026).
+
+### 3. Iniciar el servidor
+Puedes iniciar el servidor en cualquiera de los siguientes modos:
+
+* **Modo producción (Servidor estándar):**
+  ```bash
+  npm start
+  ```
+* **Modo desarrollo (Recarga automática ante cambios):**
+  ```bash
+  npm run dev
+  ```
+
+Una vez iniciado, el servidor estará escuchando peticiones en: `http://localhost:4321`
 
 ## Rutas disponibles
 
