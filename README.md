@@ -72,7 +72,7 @@ xh GET :4321/mundiales
 xh GET :4321/mundiales include==full
 ```
 **Descripción:** Permite obtener el listado de todas las ediciones, pero incluyendo la totalidad de sus campos de información (por ejemplo: país organizador, campeón, subcampeón, goles anotados, partidos jugados, etc.).
-![Obtener mundiales detallado](capturas/GETmundiales%20include.png)
+![Obtener mundiales detallado](capturas/GETmundiales-include.png)
 
 ---
 
